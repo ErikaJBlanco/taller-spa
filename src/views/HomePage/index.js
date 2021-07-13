@@ -1,15 +1,10 @@
 import "./homepage.css";
-const Homepage = async() => {
+import Search from "../../components/Search";
+const Homepage = () => {
   const view = `
           <div class="container--homepage">
-            <div class="search">
-              <h1 class="search--title">Buscador</h1>
-              <input class="search--input" type="text">
-              <div class="search--buttons">   
-                <button class="search--button">Consultar</button>
-              </div>
-            </div>
-        </div>
+           ${Search()}
+          </div>
       `;
   return view;
 };
